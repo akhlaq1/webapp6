@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+            
+        }
+        .item {
+            border: 0.5px solid black;
+            flex: 1;
+           position: relative;
+           overflow: hidden;
+         
+        }
+
+        .item:hover {
+            flex-grow: 6;
+            transition: 0.5s ease-in-out;
+        }
+
+        .content {
+            position: absolute;
+            bottom: 0;
+            background-color: black;
+            color: white;
+            margin: 40px;
+            padding: 30px;
+            visibility: hidden;
+            opacity: 0;
+            transform: translateY(100px);
+            
+        }
+
+        .item:hover .content {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0);
+            transition: 0.5s;
+            transition-delay: 0.2s;
+        }
+
+        .box1 {
+            background: url('https://fastly.picsum.photos/id/371/900/900.jpg?hmac=jcxLbilvyBkCG27M3i4y4qOOUwDsIOJNmGkKSjfIEtc');
+           background-position: center center;
+           background-repeat: no-repeat;
+        }
+
+        .box2 {
+            background: url('https://fastly.picsum.photos/id/1063/900/900.jpg?hmac=g0n9nTa7-b7Hmy55xt6LIyRTjGddREzb4XKLtRZspTw');
+           background-position: center center;
+           background-repeat: no-repeat;
+        }
+
+        .box3 {
+            background: url('https://fastly.picsum.photos/id/405/900/900.jpg?hmac=b7X7wI6PRTgZVatAcG3Q-mnwNdD69jys4_ASKqu7cNs');
+           background-position: center center;
+           background-repeat: no-repeat;
+        }
+
+        .box4 {
+            background: url('https://fastly.picsum.photos/id/613/900/900.jpg?hmac=UgDy_N92RyjqFxMS0Cu5Y3Y3-Z8qBQQVCvvf7hsF6Og');
+           background-position: center center;
+           background-repeat: no-repeat;
+        }
+
+        .box5 {
+            background: url('https://fastly.picsum.photos/id/445/900/900.jpg?hmac=Bj_WfJT74LLzPqef6UlszoBdWTmz9Ny66WGR8Q2D17c');
+           background-position: center center;
+           background-repeat: no-repeat;
+        }
+    </style>
+</head>
+    
+<body>
+    <div class="container">
+        <div class="item box1">
+            <div class="content">
+                <h3>Topic 1</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fugiat blanditiis nesciunt ipsa impedit quia suscipit alias eligendi porro 
+                </p>
+            </div>          
+        </div>
+
+        <div class="item box2">
+            <div class="content">
+                <h3>Topic 2</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fugiat blanditiis nesciunt ipsa impedit quia suscipit alias eligendi porro 
+                </p>
+            </div>          
+        </div>
+
+        <div class="item box3">
+            <div class="content">
+                <h3>Topic 3</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fugiat blanditiis nesciunt ipsa impedit quia suscipit alias eligendi porro 
+                </p>
+            </div>          
+        </div>
+
+        <div class="item box4">
+            <div class="content">
+                <h3>Topic 4</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fugiat blanditiis nesciunt ipsa impedit quia suscipit alias eligendi porro 
+                </p>
+            </div>          
+        </div>
+
+        <div class="item box5">
+            <div class="content">
+                <h3>Topic 5</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fugiat blanditiis nesciunt ipsa impedit quia suscipit alias eligendi porro 
+                </p>
+            </div>          
+        </div>
+    </div>
+</body>
+</html>

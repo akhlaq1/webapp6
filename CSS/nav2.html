@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 300vh;
+        }
+
+        .nav {
+            
+            position: sticky;
+            top: 0;
+        }
+
+        ul {
+            list-style: none;
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+            text-align: center;
+         
+           
+        }
+
+        ul a {
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+            font-family: sans-serif;
+        }
+
+        ul li:first-child a {
+            font-family: 'Alkatra', cursive;
+            text-transform: none;
+            
+        
+        }
+
+        ul li:first-child {
+            
+            float: left;
+        
+        }
+
+        ul > li {
+            display: inline-block;
+            padding: 20px 30px;
+        }
+
+        ul > li:hover {
+            background-color: #020024;
+        }
+
+        ul li:last-child {
+            float: right;
+        }
+
+        ul li:last-child input {
+            border-radius: 10px;
+        }
+        .offer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 10px 0;
+            /* display: none; */
+        }
+    </style>
+</head>
+<body>
+    <div class="offer">
+        <span>Special Offer for Today!</span>
+    </div>
+
+    <div class="nav">
+        <ul>
+            <li><a href="#">MyCompany</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><input type="text"></li>
+        </ul>
+    </div>
+
+  
+</body>
+</html>

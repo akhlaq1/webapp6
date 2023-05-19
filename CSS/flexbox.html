@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FLEX BOX</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            height: 80vh;
+            display: flex;
+            flex-wrap: wrap;
+            /* flex-direction: column; */
+
+            /* X axis alignment */
+            justify-content: space-around; 
+            
+            /* Y axis algnment */
+            align-items: center;
+/* 
+            flex-wrap: nowrap;
+            gap: 20px; */
+            border: 3px solid green;
+            background-color: grey;
+            /* padding: 30px 0; */
+            /* margin-top: 20vh; */
+        }
+
+        .flex_item {
+            border: 3px solid maroon;
+            width: 200px;
+            min-height: 100px;
+            background-color: white;
+        }
+
+        .box1 {
+            height: 20%;
+            order: 2;
+        }
+        .box2 {
+            height: 40%;
+            order: 3;
+        }
+
+        .box3 {
+            height: 60%;
+            order: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="flex_item box1">
+            Item number 1
+        </div>
+
+        <div class="flex_item box2">
+            Item number 2
+        </div>
+
+        <div class="flex_item box3">
+            Item number 3
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+/* Selectors */
+
+/* Types of Selector */
+
+/* 1. Tag selector */
+
+/* 2. ID selector */
+
+
+body {
+    background-color: #ffff;
+    
+}
+
+/* 1. ========= Tag selector Start ============ */
+
+
+h1 {
+    color: red;
+}
+
+
+
+h2 {
+    color: rgb(107, 184, 84);
+}
+
+/* 1. ========= Tag selector END ============ */
+
+/* ================= ID Selector Start ==================== */
+#blue {
+
+    color:blue
+}
+
+#purple {
+
+    color:purple
+}
+
+
+/* ================= ID Selector End ==================== */
+
+
+/* ================= Class Selector Start ==================== */
+#blue {
+
+    color:blue
+}
+
+#purple {
+
+    color:purple
+}
+
+
+/* ================= Class Selector End ==================== */
+
+
+.myTag {
+    background-color: lightblue;
+    color: brown;
+}
+
+
+/* ================= Child Selector Start ==================== */
+
+#firstList > li {
+    color: coral;
+} 
+
+
+div > span {
+    color: blue;
+}
+
+#nested_div > span {
+    color: green;
+}
+
+/* ================= Child Selector End ==================== */

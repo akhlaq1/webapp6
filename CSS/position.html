@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body {
+            height: 500vh;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            color: wheat;
+        }
+        .box1 {
+            background-color: red;
+         
+            
+
+        }
+
+        .box2 {
+            background-color: blue;
+            position: absolute;
+           top: 0;
+           z-index: 1;
+        }
+        .box0 {
+            background-color: green;
+            z-index: 0;
+        }
+
+        .container {
+            border: 3px solid black;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box0">BOX 0</div>
+        <div class="box box1">BOX 1</div>
+        <div class="box box2">BOX 2</div>
+        
+    </div>
+    
+</body>
+</html>

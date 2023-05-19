@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .container > div {
+            flex: 1;
+        }
+
+        .content {
+              text-align: center;
+              align-self: center;
+              padding: 0 30px;
+        }
+
+        .image_container {
+            width: 100%;
+            height: 400px;
+        }
+
+        .my_image {
+            width: 100%;
+            height: 100%;
+        }
+
+        @media screen and (max-width: 800px) {
+            .container {
+              
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .image_container {
+                order: 1;
+                height: 300px;
+            }
+
+            .content {
+                order: 2;
+            }
+        }
+
+       
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="content">
+            <h1>Hello World</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis beatae repellat et quibusdam mollitia numquam. Perferendis, fugiat! Modi, expedita vitae.</p>
+            <button>Sign Up</button>
+        </div>
+        <div class="image_container">
+            <img class="my_image" src="./myimage.jpg" alt="My Image">
+        </div>
+    </div>
+
+    
+</body>
+</html>
